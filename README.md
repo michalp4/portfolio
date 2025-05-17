@@ -2,7 +2,7 @@
 
 Cześć! Nazywam się Michał Pałczyński. Posiadam ponad 5 lat doświadczenia w branży IT – głównie jako kierownik projektów i lider zespołów – z solidnym zapleczem w testowaniu manualnym, analizie biznesowej i wdrażaniu oprogramowania.
 
-Zrealizowałem wiele projektów, w których odpowiadałem za projektowanie, testowanie i nadzorowanie rozwoju systemów CRM, a także za współpracę z interesariuszami w metodykach Agile. W ramach rozwoju kariery testera manualnego, tworzę dokumentację testową opartą na rzeczywistych serwisach online, takich jak Booking.com, i rozwijam praktyczne umiejętności w obszarze testowania funkcjonalnego oraz analitycznego podejścia do jakości oprogramowania.
+Zrealizowałem wiele projektów, w których odpowiadałem za projektowanie, testowanie i nadzorowanie rozwoju systemów CRM, a także za współpracę z interesariuszami w metodykach Agile. W ramach rozwoju kariery testera manualnego, tworzę dokumentację testową opartą na rzeczywistych serwisach online (Booking.com) oraz aplikacjach desktopowych (MrBuggy7) i rozwijam praktyczne umiejętności w obszarze testowania funkcjonalnego oraz analitycznego podejścia do jakości oprogramowania.
 
 ## 🧪 Projekty testowe
 
