@@ -9,7 +9,7 @@ Zrealizowałem wiele projektów, w których odpowiadałem za projektowanie, test
 | Nazwa projektu      | Opis                                                                          | Pliki                          |
 |---------------------|-------------------------------------------------------------------------------|--------------------------------|
 | **Booking.com**     | Testowanie podstawowych funkcjonalności strony (wyszukiwanie, logowanie, filtrowanie, rezerwacje) | [Przejdź do projektu](./booking-com) |
-| **MrBuggy 7**       | Testowanie aplikacji desktopowej jako część praktycznego kursu testowania      | (dokumentacja w trakcie)       |
+| **MrBuggy 7**       | Testowanie aplikacji desktopowej jako część praktycznego kursu testowania      | [Przejdź do projektu](./mrbuggy7) |
 | **AcademyBugs.com** | Testowanie strony internetowej w ramach praktycznych ćwiczeń kursowych        | (dokumentacja w trakcie)       |
 
 ## 🎓 Kursy i materiały
