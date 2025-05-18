@@ -1,6 +1,6 @@
 # Przypadki testowe – MrBuggy 7
 
-## Rejestracja – walidacja pola Confirm password
+## Walidacja pola „Confirm password” – pole puste
 **ID:** BUGGY-9
 
 **Priorytet:** Low
@@ -15,7 +15,7 @@ Powinien pojawić się komunikat "This field is required" przy polu Confirm pass
 
 ---
 
-## Formularz tworzenia konta administratora – sprawdzenie wymaganych pól
+## Sprawdzenie obecności wymaganych pól w formularzu rejestracji administratora
 **ID:** BUGGY-10
 
 **Priorytet:** Medium
@@ -45,7 +45,7 @@ Na liście powinny się pojawić tylko wyniki z dokładnie dopasowaną spacją
 
 ---
 
-## Wyszukiwanie w zakładce Providers – obsługa polskich znaków
+## Wyszukiwanie w zakładce Providers – polskie znaki
 **ID:** BUGGY-12
 
 **Priorytet:** Medium
@@ -60,7 +60,7 @@ Wyszukiwarka powinna uwzględniać polskie znaki i pokazywać poprawne wyniki
 
 ---
 
-## Zakładka Providers – sprawdzenie działania listy po kliknięci X
+## Czyszczenie pola wyszukiwania – przycisk X w zakładce Providers
 **ID:** BUGGY-13
 
 **Priorytet:** Medium
