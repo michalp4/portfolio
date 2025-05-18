@@ -1,6 +1,6 @@
-# Przypadki testowe – MrBuggy 7 (poprawione)
+# Przypadki testowe – MrBuggy 7
 
-## Rejestracja – brak komunikatu przy pustym polu Confirm password
+## Rejestracja – walidacja pola Confirm password
 **ID:** BUGGY-9
 
 **Priorytet:** Low
@@ -60,7 +60,7 @@ Wyszukiwarka powinna uwzględniać polskie znaki i pokazywać poprawne wyniki
 
 ---
 
-## Zakładka Providers – brak odświeżenia wyników po kliknięciu X
+## Zakładka Providers – sprawdzenie działania listy po kliknięci X
 **ID:** BUGGY-13
 
 **Priorytet:** Medium
