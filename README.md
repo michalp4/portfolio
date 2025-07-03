@@ -6,37 +6,38 @@ Zrealizowałem wiele projektów, w których odpowiadałem za projektowanie, test
 
 ## 🧪 Projekty testowe
 
-| Nazwa projektu      | Opis                                                                          | Pliki                          |
-|---------------------|-------------------------------------------------------------------------------|--------------------------------|
-| **Booking.com**     | Testowanie podstawowych funkcjonalności strony (wyszukiwanie, logowanie, filtrowanie, rezerwacje) | [Przejdź do projektu](./booking-com) |
-| **MrBuggy 7**       | Testowanie aplikacji desktopowej jako część praktycznego kursu testowania      | [Przejdź do projektu](./mrbuggy7) |
-| **AcademyBugs.com** | Testowanie strony internetowej w ramach praktycznych ćwiczeń kursowych        | (dokumentacja w trakcie)       |
+| Nazwa projektu      | Opis                                                                                              | Pliki                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Demobank**        | Testowanie podstawowych funkcjonalności strony - automatyzacja testów za pomocą Playwright        | [Przejdź do projektu](https://github.com/michalp4/demo-bank-tests) |
+| **Booking.com**     | Testowanie podstawowych funkcjonalności strony (wyszukiwanie, logowanie, filtrowanie, rezerwacje) | [Przejdź do projektu](./booking-com)                               |
+| **MrBuggy 7**       | Testowanie aplikacji desktopowej jako część praktycznego kursu testowania                         | [Przejdź do projektu](./mrbuggy7)                                  |
+| **AcademyBugs.com** | Testowanie strony internetowej w ramach praktycznych ćwiczeń kursowych                            | (dokumentacja w trakcie)                                           |
 
 ## 🎓 Kursy i materiały
 
 W ramach rozwoju zawodowego ukończyłem następujące kursy:
 
-- **Praktyczny kurs testowania oprogramowania** (Rafał Podraza)  
+- **Praktyczny kurs testowania oprogramowania** (Rafał Podraza)
 - **Business Analysis Fundamentals** (Microsoft)
 
 ## 🛠️ Technologie i narzędzia
 
-- DevTools (Chrome) – analiza i debugowanie aplikacji webowych  
-- Postman – testowanie i walidacja API (GET, POST)  
-- SQL – podstawy zapytań do baz danych  
-- Jira – zarządzanie zadaniami, raportowanie błędów  
-- GitLab, GitHub – zarządzanie repozytoriami i kontrola wersji  
-- Excel, Markdown – dokumentacja testowa, przypadki testowe  
-- MS Office – praca biurowa, raportowanie  
-- Agile (Scrum/Kanban) – metodologia pracy zespołowej  
-- Manual Testing – testowanie funkcjonalne, UI, regresyjne, potwierdzające  
-- Use Cases – analiza wymagań i tworzenie przypadków testowych  
-- Komunikacja i współpraca – Teams, Slack, efektywna praca w zespole  
+- DevTools (Chrome) – analiza i debugowanie aplikacji webowych
+- Postman – testowanie i walidacja API (GET, POST)
+- SQL – podstawy zapytań do baz danych
+- Jira – zarządzanie zadaniami, raportowanie błędów
+- GitLab, GitHub – zarządzanie repozytoriami i kontrola wersji
+- Excel, Markdown – dokumentacja testowa, przypadki testowe
+- MS Office – praca biurowa, raportowanie
+- Agile (Scrum/Kanban) – metodologia pracy zespołowej
+- Manual Testing – testowanie funkcjonalne, UI, regresyjne, potwierdzające
+- Use Cases – analiza wymagań i tworzenie przypadków testowych
+- Komunikacja i współpraca – Teams, Slack, efektywna praca w zespole
 
 ## 🧪 Typy testów, które wykonuję
 
-- Testy funkcjonalne  
-- Testy UI  
-- Testy regresji  
-- Testy potwierdzające  
+- Testy funkcjonalne
+- Testy UI
+- Testy regresji
+- Testy potwierdzające
 - Podstawy testów API (GET, POST w Postmanie)
