@@ -8,11 +8,12 @@ Testy pozytywne oraz negatywne logowania do aplikacji
 Weryfikacja poprawnego logowania użytkownika z prawidłowymi danymi.
 
 **Preconditions:**
-1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym  
-2. Dostęp do internetu na urządzeniu  
-3. Założone konto w aplikacji  
-4. Formularz logowania jest widoczny  
-5. Aplikacja jest dostępna  
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
 ### Kroki testowe
 
@@ -20,17 +21,18 @@ Weryfikacja poprawnego logowania użytkownika z prawidłowymi danymi.
    **Oczekiwany rezultat:**  
    Aplikacja zostaje otwarta, widoczny jest ekran logowania
 
-2. Użytkownik wypełnia następujące pola prawidłowymi danymi:  
-   - Numer telefonu - poprawny, zarejestrowany w systemie  
+2. Użytkownik wypełnia następujące pola prawidłowymi danymi:
+
+   - Numer telefonu - poprawny, zarejestrowany w systemie
    - Hasło - poprawne, zgodne z wymaganiami  
-   **Oczekiwany rezultat:**  
-   Pola formularza są wypełnione
+     **Oczekiwany rezultat:**  
+     Pola formularza są wypełnione
 
 3. Użytkownik naciska przycisk Zaloguj się  
-   **Oczekiwany rezultat:**  
-   - Formularz zostaje przesłany  
-   - Następuje przekierowanie do ekranu głównego  
-   - Pojawia się panel użytkownika z widocznymi ofertami pracy  
+   **Oczekiwany rezultat:**
+   - Formularz zostaje przesłany
+   - Następuje przekierowanie do ekranu głównego
+   - Pojawia się panel użytkownika z widocznymi ofertami pracy
 
 ---
 
@@ -40,11 +42,12 @@ Weryfikacja poprawnego logowania użytkownika z prawidłowymi danymi.
 Próba zalogowania do aplikacji bez wpisywania danych w polu "Numer telefonu".
 
 **Preconditions:**
-1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym  
-2. Dostęp do internetu na urządzeniu  
-3. Założone konto w aplikacji  
-4. Formularz logowania jest widoczny  
-5. Aplikacja jest dostępna  
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
 ### Kroki testowe
 
@@ -52,11 +55,12 @@ Próba zalogowania do aplikacji bez wpisywania danych w polu "Numer telefonu".
    **Oczekiwany rezultat:**  
    Aplikacja zostaje otwarta, widoczny jest ekran logowania
 
-2. Użytkownik wypełnia następujące pola prawidłowymi danymi:  
+2. Użytkownik wypełnia następujące pola prawidłowymi danymi:
+
    - Hasło - poprawne, zgodne z wymaganiami  
-   Pole "Numer telefonu" pozostaje puste  
-   **Oczekiwany rezultat:**  
-   Wypełnione jest pole "Hasło", pole "Numer telefonu" pozostaje puste
+     Pole "Numer telefonu" pozostaje puste  
+     **Oczekiwany rezultat:**  
+     Wypełnione jest pole "Hasło", pole "Numer telefonu" pozostaje puste
 
 3. Użytkownik naciska przycisk zaloguj się  
    **Oczekiwany rezultat:**  
@@ -70,11 +74,12 @@ Próba zalogowania do aplikacji bez wpisywania danych w polu "Numer telefonu".
 Próba zalogowania do aplikacji bez wpisywania danych w polu "Hasło".
 
 **Preconditions:**
-1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym  
-2. Dostęp do internetu na urządzeniu  
-3. Założone konto w aplikacji  
-4. Formularz logowania jest widoczny  
-5. Aplikacja jest dostępna  
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
 ### Kroki testowe
 
@@ -82,11 +87,12 @@ Próba zalogowania do aplikacji bez wpisywania danych w polu "Hasło".
    **Oczekiwany rezultat:**  
    Aplikacja zostaje otwarta, widoczny jest ekran logowania
 
-2. Użytkownik wypełnia następujące pola prawidłowymi danymi:  
+2. Użytkownik wypełnia następujące pola prawidłowymi danymi:
+
    - Numer telefonu - poprawny, zarejestrowany w systemie  
-   Pole "Hasło" pozostaje puste  
-   **Oczekiwany rezultat:**  
-   Wypełnione jest pole "Numer telefonu", pole "Hasło" pozostaje puste
+     Pole "Hasło" pozostaje puste  
+     **Oczekiwany rezultat:**  
+     Wypełnione jest pole "Numer telefonu", pole "Hasło" pozostaje puste
 
 3. Użytkownik naciska przycisk zaloguj się  
    **Oczekiwany rezultat:**  
@@ -100,11 +106,12 @@ Próba zalogowania do aplikacji bez wpisywania danych w polu "Hasło".
 Próba zalogowania do aplikacji za pomocą za krótkiego numeru telefonu.
 
 **Preconditions:**
-1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym  
-2. Dostęp do internetu na urządzeniu  
-3. Założone konto w aplikacji  
-4. Formularz logowania jest widoczny  
-5. Aplikacja jest dostępna  
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
 ### Kroki testowe
 
@@ -129,11 +136,12 @@ Próba zalogowania do aplikacji za pomocą za krótkiego numeru telefonu.
 Próba zalogowania do aplikacji za pomocą błędnego numeru telefonu zawierającego litery oraz znaki specjalne.
 
 **Preconditions:**
-1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym  
-2. Dostęp do internetu na urządzeniu  
-3. Założone konto w aplikacji  
-4. Formularz logowania jest widoczny  
-5. Aplikacja jest dostępna  
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
 ### Kroki testowe
 
@@ -158,11 +166,12 @@ Próba zalogowania do aplikacji za pomocą błędnego numeru telefonu zawierają
 Próba zalogowania do aplikacji za pomocą błędnego hasła.
 
 **Preconditions:**
-1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym  
-2. Dostęp do internetu na urządzeniu  
-3. Założone konto w aplikacji  
-4. Formularz logowania jest widoczny  
-5. Aplikacja jest dostępna  
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
 ### Kroki testowe
 
