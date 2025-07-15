@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="61" name="Logowanie do Tikrow" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Testy pozytywne oraz negatywne logowania do aplikacji</p>
+]]></details> 
+
+<testcase internalid="62" name="Logowanie z poprawnymi danymi">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Weryfikacja poprawnego logowania&nbsp;użytkownika z prawidłowymi danymi.</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Zainstalowana aplikacja Tikrow na urządzeniu mobilnym</li>
+	<li>Dostęp do internetu na urządzeniu</li>
+	<li>Założone konto w aplikacji</li>
+	<li>Formularz logowania jest widoczny</li>
+	<li>Aplikacja jest dostępna</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uzytkownik otwiera aplikację mobilną Tikrow</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja zostaje otwarta, widoczny jest ekran logowania</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Użytkownik wypełnia następujące pola prawidłowymi danymi:
+	<ul>
+		<li>Numer telefonu - poprawny, zarejestrowany w systemie</li>
+		<li>Hasło - poprawne, zgodne z wymaganiami</li>
+	</ul>
+	</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pola formularza są wypełnione</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik naciska przycisk Zaloguj się</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>Formularz zostaje przesłany</li>
+	<li>Następuje przekierowanie do ekranu gł&oacute;wnego</li>
+	<li>Pojawia się panel użytkownika z widocznymi ofertami pracy</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="67" name="Logowanie z pustym polem &quot;Numer telefonu&quot;">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Pr&oacute;ba zalogowania do aplikacji bez wpisywania danych w polu &quot;Numer telefonu&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Zainstalowana aplikacja Tikrow na urządzeniu mobilnym</li>
+	<li>Dostęp do internetu na urządzeniu</li>
+	<li>Założone konto w aplikacji</li>
+	<li>Formularz logowania jest widoczny</li>
+	<li>Aplikacja jest dostępna</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik otwiera aplikację mobilną Tikrow</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Aplikacja zostaje otwarta, widoczny jest ekran logowania</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Użytkownik wypełnia następujące pola prawidłowymi danymi:
+	<ul>
+		<li>Hasło - poprawne, zgodne z wymaganiami</li>
+	</ul>
+	</li>
+	<li>Pole &quot;Numer telefonu&quot; pozostaje puste</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wypełnione jest pole &quot;Hasło&quot;, pole &quot;Numer telefonu&quot; pozostaje puste</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik naciska przycisk zaloguj się</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod polem &quot;Numer telefonu&quot; pojawia się komunikat walidacyjny w kolorze czerwonym o treści&nbsp;<strong>Wymagane.&nbsp;</strong>Aplikacja nie przeładowuje się</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="72" name="Logowanie z pustym polem &quot;Hasło&quot;">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Pr&oacute;ba zalogowania do aplikacji bez wpisywania danych w polu &quot;Hasło&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Zainstalowana aplikacja Tikrow na urządzeniu mobilnym</li>
+	<li>Dostęp do internetu na urządzeniu</li>
+	<li>Założone konto w aplikacji</li>
+	<li>Formularz logowania jest widoczny</li>
+	<li>Aplikacja jest dostępna</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik otwiera aplikację mobilną Tikrow</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Aplikacja zostaje otwarta, widoczny jest ekran logowania</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Użytkownik wypełnia następujące pola prawidłowymi danymi:
+	<ul>
+		<li>Numer telefonu - poprawny, zarejestrowany w systemie</li>
+	</ul>
+	</li>
+	<li>Pole &quot;Hasło&quot; pozostaje puste</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wypełnione jest pole &quot;Numer telefonu&quot;, pole &quot;Hasło&quot; pozostaje puste</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik naciska przycisk zaloguj się</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod polem &quot;Hasło&quot; pojawia się komunikat walidacyjny w kolorze czerwonym o treści&nbsp;<strong>Wymagane.&nbsp;</strong>Aplikacja nie przeładowuje się</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="77" name="Logowanie z wpisanym za krótkim numerem w polu &quot;Numer telefonu&quot;">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Pr&oacute;ba zalogowania do aplikacji za pomocą za kr&oacute;tkiego numeru telefonu</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Zainstalowana aplikacja Tikrow na urządzeniu mobilnym</li>
+	<li>Dostęp do internetu na urządzeniu</li>
+	<li>Założone konto w aplikacji</li>
+	<li>Formularz logowania jest widoczny</li>
+	<li>Aplikacja jest dostępna</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik otwiera aplikację mobilną Tikrow</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Aplikacja zostaje otwarta, widoczny jest ekran logowania</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Użytkownik wpisuje za kr&oacute;tki numer telefonu, np. 1234567</li>
+	<li>Użytkownik pole &quot;Hasło&quot; prawidłowymi, zgodnymi z wymaganiami danymi</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wypełnione są wszystkie pola formularza</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik naciska przycisk zaloguj się</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod formularzem pojawia się komunikat walidacyjny w kolorze czerwonym o treści&nbsp;<strong>Wprowadzono niepoprawny login lub hasło.&nbsp;</strong>Aplikacja nie przeładowuje się</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="82" name="Logowanie z wpisanym numerem zawierającym znaki specjalne oraz litery w polu &quot;Numer telefonu&quot;">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Pr&oacute;ba zalogowania do aplikacji za pomocą błędnego numeru telefonu zawierającego litery oraz znaki specjalne</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Zainstalowana aplikacja Tikrow na urządzeniu mobilnym</li>
+	<li>Dostęp do internetu na urządzeniu</li>
+	<li>Założone konto w aplikacji</li>
+	<li>Formularz logowania jest widoczny</li>
+	<li>Aplikacja jest dostępna</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik otwiera aplikację mobilną Tikrow</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Aplikacja zostaje otwarta, widoczny jest ekran logowania</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Użytkownik wpisuje za kr&oacute;tki numer telefonu, np. 123456az!</li>
+	<li>Użytkownik wypełnia pole &quot;Hasło&quot; prawidłowymi, zgodnymi z wymaganiami danymi</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wypełnione są wszystkie pola formularza</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik naciska przycisk zaloguj się</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod formularzem pojawia się komunikat walidacyjny w kolorze czerwonym o treści&nbsp;<strong>Wprowadzono niepoprawny login lub hasło.&nbsp;</strong>Aplikacja nie przeładowuje się</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="87" name="Logowanie z wpisanym błędnym hasłem">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Pr&oacute;ba zalogowania do aplikacji za pomocą błędnego hasła</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>Zainstalowana aplikacja Tikrow na urządzeniu mobilnym</li>
+	<li>Dostęp do internetu na urządzeniu</li>
+	<li>Założone konto w aplikacji</li>
+	<li>Formularz logowania jest widoczny</li>
+	<li>Aplikacja jest dostępna</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik otwiera aplikację mobilną Tikrow</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Aplikacja zostaje otwarta, widoczny jest ekran logowania</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Użytkownik wypełnia pole &quot;Numer telefonu&quot; poprawnym, zarejestrowanym w bazie numerem</li>
+	<li>Użytkownik uzupełnia pole &quot;Hasło&quot; nieprawidłowymi danymi</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wypełnione są wszystkie pola formularza</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik naciska przycisk zaloguj się</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod formularzem pojawia się komunikat walidacyjny w kolorze czerwonym o treści&nbsp;<strong>Wprowadzono niepoprawny login lub hasło.&nbsp;</strong>Aplikacja nie przeładowuje się</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
