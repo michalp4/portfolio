@@ -1,129 +1,178 @@
-# Logowanie do Tikrow
+# Testy funkcjonalne - Logowanie do Tikrow
 
-**Opis:**  
-Testy funkcjonalne logowania do aplikacji mobilnej Tikrow z poprawnymi i błędnymi danymi.
+Testy pozytywne oraz negatywne logowania do aplikacji.
 
 ---
 
-## Logowanie z poprawnymi danymi
-
-**Opis:**  
-Logowanie istniejącego użytkownika z poprawnym numerem telefonu i hasłem.
+## Test Case 1: Logowanie z poprawnymi danymi
 
 **Preconditions:**
 
 1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
 2. Dostęp do internetu na urządzeniu
-3. Użytkownik ma założone konto i zna hasło
-4. Aplikacja jest dostępna
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
-### Kroki testowe
+**Steps:**
 
-1. Użytkownik otwiera aplikację Tikrow  
-   **Oczekiwany rezultat:**  
-   Aplikacja zostaje uruchomiona, wyświetla ekran logowania
+1. Uzytkownik otwiera aplikację mobilną Tikrow  
+   **Expected result:**  
+   Aplikacja zostaje otwarta, widoczny jest ekran logowania
 
-2. Użytkownik w polu "Numer telefonu" wpisuje poprawny, 9-cyfrowy numer telefonu  
-   **Oczekiwany rezultat:**  
-   Pole jest wypełnione poprawnym numerem
+2. Użytkownik wypełnia następujące pola prawidłowymi danymi:
 
-3. Użytkownik w polu "Hasło" wpisuje poprawne hasło  
-   **Oczekiwany rezultat:**  
-   Pole jest wypełnione hasłem
+   - Numer telefonu - poprawny, zarejestrowany w systemie
+   - Hasło - poprawne, zgodne z wymaganiami  
+     **Expected result:**  
+     Pola formularza są wypełnione
 
-4. Użytkownik naciska przycisk **Zaloguj się**  
-   **Oczekiwany rezultat:**  
-   Użytkownik zostaje zalogowany do aplikacji i widzi ekran główny
+3. Użytkownik naciska przycisk Zaloguj się  
+   **Expected result:**
+   - Formularz zostaje przesłany
+   - Następuje przekierowanie do ekranu głównego
+   - Pojawia się panel użytkownika z widocznymi ofertami pracy
 
 ---
 
-## Logowanie z niepoprawnym numerem telefonu - za krótki numer
-
-**Opis:**  
-Logowanie użytkownika z numerem telefonu krótszym niż 9 cyfr.
+## Test Case 2: Logowanie z pustym polem "Numer telefonu"
 
 **Preconditions:**
 
 1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
 2. Dostęp do internetu na urządzeniu
-3. Aplikacja jest dostępna
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
-### Kroki testowe
+**Steps:**
 
-1. Użytkownik otwiera aplikację Tikrow  
-   **Oczekiwany rezultat:**  
-   Aplikacja zostaje uruchomiona, wyświetla ekran logowania
+1. Użytkownik otwiera aplikację mobilną Tikrow  
+   **Expected result:**  
+   Aplikacja zostaje otwarta, widoczny jest ekran logowania
 
-2. Użytkownik w polu "Numer telefonu" wpisuje numer krótszy niż 9 cyfr, np. 12345  
-   **Oczekiwany rezultat:**  
-   Pole jest wypełnione podanym numerem
+2. Użytkownik wypełnia następujące pola prawidłowymi danymi:
 
-3. Użytkownik w polu "Hasło" wpisuje dowolne hasło  
-   **Oczekiwany rezultat:**  
-   Pole jest wypełnione hasłem
+   - Hasło - poprawne, zgodne z wymaganiami  
+     Pole "Numer telefonu" pozostaje puste  
+     **Expected result:**  
+     Wypełnione jest pole "Hasło", pole "Numer telefonu" pozostaje puste
 
-4. Użytkownik naciska przycisk **Zaloguj się**  
-   **Oczekiwany rezultat:**  
-   Pojawia się komunikat błędu: **Nieprawidłowy numer telefonu**
+3. Użytkownik naciska przycisk zaloguj się  
+   **Expected result:**  
+   Pod polem "Numer telefonu" pojawia się komunikat walidacyjny w kolorze czerwonym o treści **Wymagane.**  
+   Aplikacja nie przeładowuje się
 
 ---
 
-## Logowanie z niepoprawnym hasłem - puste pole
-
-**Opis:**  
-Logowanie użytkownika bez podania hasła.
+## Test Case 3: Logowanie z pustym polem "Hasło"
 
 **Preconditions:**
 
 1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
 2. Dostęp do internetu na urządzeniu
-3. Aplikacja jest dostępna
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
-### Kroki testowe
+**Steps:**
 
-1. Użytkownik otwiera aplikację Tikrow  
-   **Oczekiwany rezultat:**  
-   Aplikacja zostaje uruchomiona, wyświetla ekran logowania
+1. Użytkownik otwiera aplikację mobilną Tikrow  
+   **Expected result:**  
+   Aplikacja zostaje otwarta, widoczny jest ekran logowania
 
-2. Użytkownik w polu "Numer telefonu" wpisuje poprawny, 9-cyfrowy numer telefonu  
-   **Oczekiwany rezultat:**  
-   Pole jest wypełnione podanym numerem
+2. Użytkownik wypełnia następujące pola prawidłowymi danymi:
 
-3. Użytkownik nie wpisuje hasła (pole pozostaje puste)  
-   **Oczekiwany rezultat:**  
-   Pole jest puste
+   - Numer telefonu - poprawny, zarejestrowany w systemie  
+     Pole "Hasło" pozostaje puste  
+     **Expected result:**  
+     Wypełnione jest pole "Numer telefonu", pole "Hasło" pozostaje puste
 
-4. Użytkownik naciska przycisk **Zaloguj się**  
-   **Oczekiwany rezultat:**  
-   Pojawia się komunikat błędu: **Pole hasła nie może być puste**
+3. Użytkownik naciska przycisk zaloguj się  
+   **Expected result:**  
+   Pod polem "Hasło" pojawia się komunikat walidacyjny w kolorze czerwonym o treści **Wymagane.**  
+   Aplikacja nie przeładowuje się
 
 ---
 
-## Logowanie z niepoprawnym hasłem - błędne hasło
-
-**Opis:**  
-Logowanie użytkownika z błędnym hasłem.
+## Test Case 4: Logowanie z wpisanym za krótkim numerem w polu "Numer telefonu"
 
 **Preconditions:**
 
 1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
 2. Dostęp do internetu na urządzeniu
-3. Aplikacja jest dostępna
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
 
-### Kroki testowe
+**Steps:**
 
-1. Użytkownik otwiera aplikację Tikrow  
-   **Oczekiwany rezultat:**  
-   Aplikacja zostaje uruchomiona, wyświetla ekran logowania
+1. Użytkownik otwiera aplikację mobilną Tikrow  
+   **Expected result:**  
+   Aplikacja zostaje otwarta, widoczny jest ekran logowania
 
-2. Użytkownik w polu "Numer telefonu" wpisuje poprawny, 9-cyfrowy numer telefonu  
-   **Oczekiwany rezultat:**  
-   Pole jest wypełnione podanym numerem
+2. Użytkownik wpisuje za krótki numer telefonu, np. 1234567  
+   Użytkownik pole "Hasło" prawidłowymi, zgodnymi z wymaganiami danymi  
+   **Expected result:**  
+   Wypełnione są wszystkie pola formularza
 
-3. Użytkownik w polu "Hasło" wpisuje błędne hasło  
-   **Oczekiwany rezultat:**  
-   Pole jest wypełnione hasłem
+3. Użytkownik naciska przycisk zaloguj się  
+   **Expected result:**  
+   Pod formularzem pojawia się komunikat walidacyjny w kolorze czerwonym o treści **Wprowadzono niepoprawny login lub hasło.**  
+   Aplikacja nie przeładowuje się
 
-4. Użytkownik naciska przycisk **Zaloguj się**  
-   **Oczekiwany rezultat:**  
-   Pojawia się komunikat błędu: **Nieprawidłowe hasło**
+---
+
+## Test Case 5: Logowanie z wpisanym numerem zawierającym znaki specjalne oraz litery w polu "Numer telefonu"
+
+**Preconditions:**
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
+
+**Steps:**
+
+1. Użytkownik otwiera aplikację mobilną Tikrow  
+   **Expected result:**  
+   Aplikacja zostaje otwarta, widoczny jest ekran logowania
+
+2. Użytkownik wpisuje za krótki numer telefonu, np. 123456az!  
+   Użytkownik wypełnia pole "Hasło" prawidłowymi, zgodnymi z wymaganiami danymi  
+   **Expected result:**  
+   Wypełnione są wszystkie pola formularza
+
+3. Użytkownik naciska przycisk zaloguj się  
+   **Expected result:**  
+   Pod formularzem pojawia się komunikat walidacyjny w kolorze czerwonym o treści **Wprowadzono niepoprawny login lub hasło.**  
+   Aplikacja nie przeładowuje się
+
+---
+
+## Test Case 6: Logowanie z wpisanym błędnym hasłem
+
+**Preconditions:**
+
+1. Zainstalowana aplikacja Tikrow na urządzeniu mobilnym
+2. Dostęp do internetu na urządzeniu
+3. Założone konto w aplikacji
+4. Formularz logowania jest widoczny
+5. Aplikacja jest dostępna
+
+**Steps:**
+
+1. Użytkownik otwiera aplikację mobilną Tikrow  
+   **Expected result:**  
+   Aplikacja zostaje otwarta, widoczny jest ekran logowania
+
+2. Użytkownik wypełnia pole "Numer telefonu" poprawnym, zarejestrowanym w bazie numerem  
+   Użytkownik uzupełnia pole "Hasło" nieprawidłowymi danymi  
+   **Expected result:**  
+   Wypełnione są wszystkie pola formularza
+
+3. Użytkownik naciska przycisk zaloguj się  
+   **Expected result:**  
+   Pod formularzem pojawia się komunikat walidacyjny w kolorze czerwonym o treści **Wprowadzono niepoprawny login lub hasło.**  
+   Aplikacja nie przeładowuje się
