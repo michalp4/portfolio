@@ -18,6 +18,8 @@ Zrealizowałem wiele projektów, w których odpowiadałem za projektowanie, test
 
 W ramach rozwoju zawodowego ukończyłem następujące kursy:
 
+- **Praktyczne wprowadzenie do testów automatycznych z Playwright** (jaktestowac.pl)
+- **Automatyzacja testów: WebdriverIO + TypeScript + Jenkins** (Rafał Podraza)
 - **Praktyczny kurs testowania oprogramowania** (Rafał Podraza)
 - **Business Analysis Fundamentals** (Microsoft)
 
